@@ -18,6 +18,9 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: android-actions/setup-android@v3
+        with:
+          # The legacy "tools" package was removed from the Android SDK repository.
+          packages: platform-tools
       - name: Install Android build dependencies
         run: sdkmanager "platforms;android-34" "build-tools;34.0.0"
       - name: Run policy tests
