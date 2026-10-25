@@ -1,0 +1,34 @@
+# Reproducible outputs and local Android configuration.
+/build/
+/dist/
+/local.properties
+/.gradle/
+/.idea/
+*.iml
+
+# Signing material and environment secrets must never be published.
+/signing/
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.password
+*.idsig
+.env
+.env.*
+!.env.example
+
+# Device diagnostics and machine-local files.
+/logs/
+/reports/
+*.log
+build-validation*.txt
+Z6X-Service-Probe-*.txt
+Z6X-ADB-Helper-*.txt
+.DS_Store
+._*
+*.swp
+*.swo
+*~
